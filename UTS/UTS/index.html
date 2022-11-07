@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/UTS/css/style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ToDo List</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section">
+            <aside class="add-activity">
+                <h2>Masukkan Kegiatan Baru</h2>
+                <form id="input-kegiatan">
+                    <div class="input">
+                        <label for="title">Judul</label>
+                        <input type="text" id="title" placeholder="Masukkan Judul Kegiatan">
+                    </div>
+                    </div>
+                    <div class="input">
+                        <label for="date">Waktu</label>
+                        <input type="date" id="year">
+                    </div>
+                    <div class="checkbok">
+                        <label for="isComplete">Selesai dilakukan</label>
+                        <input type="checkbox" id="isComplete">
+                    </div>
+                    <button id="btn-addtochart">Masukkan Kegiatan ke Rak Akan Dilakukan</button>
+                </form>
+            </aside>
+            <aside class="about-activity">
+                <div class="info-activitys">
+                    <div>
+                        <p>Total Kegiatan</p>
+                        <p class="total-activitys">0</p>
+                    </div>
+                    <div>
+                        <p>Akan Dilakukan</p>
+                        <p class="unCompleted-activitys">0</p>
+                    </div>
+                    <div>
+                        <p>Selesai Dilakukan</p>
+                        <p class="completed-activitys">0</p>
+                    </div>
+                </div>
+                <div class="search-activitys">
+                    <h2>Cari Kegiatan</h2>
+                    <div>
+                        <input type="text" id="search" placeholder="Masukkan Judul Kegiatan">
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <section class="list-activitys">
+            <aside class="uncompletedread">
+                <h2>Akan Dilakukan</h2>
+                <div class="parent-card-activitys">
+                </div>
+            </aside>
+            <aside class="completedread">
+                <h2>Selesai Dilakukan</h2>
+                <div class="parent-card-activitys-completed">
+                </div>
+            </aside>
+        </section>
+    </main>
+
+<script src="/UTS/js/script.js"></script>
+</body>
+</html>
